@@ -1,9 +1,10 @@
 Package: pokedex
-Title: What the Package Does (One Line, Title Case)
+Title: A R package that will allow users to search Pokemon and visualise them in the RStudio plot window.
+Version: 0.0.0.9000
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Risa", "Watanabe", , "rwatanabe@smith.edu", role = c("aut", "cre"))
+Description: A R package that will allow users to search Pokemon and visualise them in the RStudio plot window.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
