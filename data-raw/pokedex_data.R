@@ -1,13 +1,5 @@
-## code to prepare `pokedex_data` dataset goes here
-json_objects <- vector(mode = "list", 10)
+## code to prepare `pokedex_dataset`
 
-for (i in 1:10) {
-  url <- file.path("https://xkcd.com", i, "info.0.json")
-  json_objects[[i]] <- jsonlite::read_json(url)
-  Sys.sleep(1)
-}
-
-xkcd <- do.call(rbind, json_objects)
-xkcd_comics <- as.data.frame(xkcd)
+pokedex_dataset <- read.csv("data-raw/Pokedex_Ver_SV2.csv")
 
 usethis::use_data(pokedex_data, overwrite = TRUE)
