@@ -1,12 +1,9 @@
-#' @title Use the xkcd API
+#' @title Use the Pokedex Type Search Function
 #' @description
-#' Given a comic number, the `xkcd()` function calls the xkcd JSON API and returns metadata about the comic in the form of a list object.
-#'
-#' @importFrom jsonlite read_json
+#' Given a comic number, the `pokedex()` function calls the Pokemon data set and returns the name of all of the Pokemon's that have Type 1 features that the user specified in the form of a list object.
+#' @importFrom read_csv
 #' @export
-xkcd <- function(number) {
+search_pokedex <- function(type_input, pokedex_dataset) {
 
-  url <- file.path("https://xkcd.com", floor(number), "info.0.json")
-  x <- jsonlite::read_json(url)
-  return(x)
-} # example code from xkcd package
+}
+
