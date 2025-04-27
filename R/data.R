@@ -21,25 +21,25 @@
 #'   \item{Egg_Steps}{The number of cycle required for a Pokemon egg to hatch. Usually 1 cycle equals 256 Steps in the game.}
 #'   \item{Egg_Group1}{The categories which determine which Pokemon are able to interbreed. }
 #'   \item{Egg_Group2}{The second egg group category, if the Pokemon has two egg groups. }
-#'   \item{Get_Rate}{}
-#'   \item{Base_Experience}{}
-#'   \item{Experience_Type}{}
-#'   \item{Category}{}
-#'   \item{Mega_Evolution_Flag}{}
-#'   \item{Region_Form}{}
-#'   \item{HP}{}
-#'   \item{Attack}{}
-#'   \item{Defense}{}
-#'   \item{SP_Attack}{}
-#'   \item{SP_Defense}{}
-#'   \item{Speed}{}
-#'   \item{Total}{}
-#'   \item{E_HP}{}
-#'   \item{E_Attack}{}
-#'   \item{E_Defense}{}
-#'   \item{E_SP_Attack}{}
-#'   \item{E_SP_Defense}{}
-#'   \item{E_Speed}{}
+#'   \item{Get_Rate}{Numeric value indicating the catch rate. The higher the value, the easier it is to catch.}
+#'   \item{Base_Experience}{The amount of Experience Point (EXP) that the Pokemon drops when it is defeated in battle.}
+#'   \item{Experience_Type}{The total EXP needed to train that Pokemon to level 100.}
+#'   \item{Category}{Three different categorizations for Pokemon - "Ordinary", "Legendary" and "Mythical". Each Pokemon is categorized in one of the three groups.}
+#'   \item{Mega_Evolution_Flag}{The Pokemon that is able to Mega Evolve will have "Mega" as a value for this variable. If they do not Mega Evolve, this variable is left blank.}
+#'   \item{Region_Form}{If the Pokemon has a Region Form of either "Alolan" or "Galarian", it will be indicated in this variable. If not, this variable is left empty.}
+#'   \item{HP}{The Pokemon's base status that determines how much damage a Pokemon can receive before fainting.}
+#'   \item{Attack}{The Pokemon's base status that determines how much damage the Pokemon deals when using a Physical Move.}
+#'   \item{Defense}{The Pokemon's base status that determines how much damage the Pokemon receives when it's hit with a Physical Move.}
+#'   \item{SP_Attack}{The Pokemon's base status that determines how much damage the Pokemon deals when using a Special Move.}
+#'   \item{SP_Defense}{The Pokemon's base status that determines how much damage the Pokemon receives when it's hit with a Special Move.}
+#'   \item{Speed}{The Pokemon's base status that determines the order of Pokemon that can act in battle.}
+#'   \item{Total}{The sum of the Pokemon's base status points (HP, Attack, Defense, SP_Attack, SP_Defense, Speed).}
+#'   \item{E_HP}{The amount of Effort HP Value that the Pokemon will drop when it is defeated in battle.}
+#'   \item{E_Attack}{The amount of Effort Attck Value that the Pokemon will drop when it is defeated in battle.}
+#'   \item{E_Defense}{The amount of Effort Defense Value that the Pokemon will drop when it is defeated in battle.}
+#'   \item{E_SP_Attack}{The amount of Effort Special Attack Value the Pokemon will drop when it is defeated in battle.}
+#'   \item{E_SP_Defense}{The amount of Effort Special Defense Value the Pokemon will drop when it is defeated in battle.}
+#'   \item{E_Speed}{The amount of Effort Speed Value the Pokemon will drop when it is defeated in battle.}
 #' }
-#' @source <https://xkcd.com/json.html>
-"xkcd_comics"
+#' @source <https://pokedex.com/json.html>
+"pokedex_data"
