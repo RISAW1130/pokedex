@@ -1,5 +1,14 @@
-# function for plotting Pokemon photo in R plot window
-
+#' @title Plot specified Pokemon's PNG image
+#' @description
+#' `pokemon_photo()` displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
+#' @param name A character object that is the name of the Pokemon
+#' @importFrom png readPNG
+#' @importFrom graphics plot.new
+#' @importFrom grid grid.raster
+#' @returns A rastergrob. See "Details" section of [grid::grob()] for more information.
+#' @examples
+#' pokemon_photo("Pikachu")
+#' @export
 pokemon_photo <- function(name) {
   num <- NA
 
