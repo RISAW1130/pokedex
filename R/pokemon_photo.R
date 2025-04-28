@@ -1,19 +1,26 @@
 # function for plotting Pokemon photo in R plot window
 
-pokemon_photo <- function(data, name) {
-  num <- vector(mode = "character")
+pokemon_photo <- function(name) {
+  num <- NA
 
-  for (i in length(data)) {
-    if (data$Name == name) {
-      num <- data$No
-    } else {
-      next
+  for (i in 1:nrow(pokedex_data)) {
+    if (tolower(pokedex_data$Name[i]) == tolower(name)) {
+      num <- as.character(pokedex_data$No[i])
     }
   }
 
-  url <- file.path("https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/", num, ".png")
+  if (nchar(num) == 1) {
+    num <- paste0("00", num)
+  }
 
-  image <- png::readPNG(RCurl::getURLcontent(url))
+  if (nchar(num) == 2) {
+    num <- paste0("0", num)
+  }
 
-  return(image)
+  url <- paste0("https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/", num, ".png")
+
+  image <- png::readPNG(RCurl::getURLContent(url))
+
+  graphics::plot.new()
+  grid::grid.raster(image)
 }
