@@ -1,6 +1,6 @@
 #' @title Plot specified Pokemon's PNG image
 #' @description
-#' `pokemon_photo()` displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
+#' `pokemon_photo()` displays a PNG image of a specified Pokemon (excluding variations in different Forms, Mega Evolutions, Region Forms) as a plot in a graphics device (e.g., the RStudio plot window).
 #' @param name A character object that is the name of the Pokemon
 #' @importFrom png readPNG
 #' @importFrom graphics plot.new
@@ -12,10 +12,18 @@
 pokemon_photo <- function(name) {
   num <- NA
 
+  if (is.character(name) == FALSE) {
+    stop("Your input must be a character vector. Try again.")
+  }
+
   for (i in 1:nrow(pokedex_data)) {
-    if (tolower(pokedex_data$Name[i]) == tolower(name)) {
+    if (tolower(pokedex_data$Original_Name[i]) == tolower(name)) {
       num <- as.character(pokedex_data$No[i])
     }
+  }
+
+  if (is.na(num) == TRUE) {
+    stop("We could not find a matching Pokemon in our Pokedex. Try again.")
   }
 
   if (nchar(num) == 1) {
