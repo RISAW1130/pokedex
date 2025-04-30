@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pokedex
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The `pokedex` package provides an R interface to search through the [pokedex_data] for names of Pokemon that have a specific Type. You can also display the official image of a Pokemon you would like to look up.
+
+## Installation
+
+You can install the development version of pokedex from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pokedex")
+devtools::install_github("RISAW1130/pokedex")
+```
+
+## Usage
+
+```{r example}
+library(pokedex)
+```
+
+Given a specific name of a Pokemon, the `pokemon_photo()` function displays the corresponding official PNG image of the specified Pokemon in the R plot window:
+
+```{r}
+pokemon_photo("Pikachu")
+```
