@@ -10,11 +10,12 @@ pokemon_photo(name)
 \item{name}{A character object that is the name of the Pokemon}
 }
 \value{
-A rastergrob. See "Details" section of \code{\link[grid:grid.grob]{grid::grob()}} for more information.
+A raster object (bitmap image).
 }
 \description{
-\code{pokemon_photo()} displays a PNG image of a specified Pokemon (excluding variations in different Forms, Mega Evolutions, Region Forms) as a plot in a graphics device (e.g., the RStudio plot window).
+\code{pokemon_photo()} displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
 }
 \examples{
 pokemon_photo("Pikachu")
+pokemon_photo("Mega Absol")
 }

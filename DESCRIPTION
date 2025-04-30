@@ -17,4 +17,5 @@ LazyData: true
 Imports: 
     graphics,
     grid,
-    png
+    png,
+    stringr
