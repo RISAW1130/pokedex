@@ -1,11 +1,12 @@
-#' @title Plot specified Pokemon's PNG image
+#' @title Plot specific Pokemon's official PNG image
 #' @description
 #' `pokemon_photo()` displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
-#' @param name A character object that is the name of the Pokemon
+#' @param name A character object that is the name of a Pokemon
+#' @importFrom stringr str_sub
 #' @importFrom png readPNG
 #' @importFrom graphics plot.new
 #' @importFrom grid grid.raster
-#' @returns A raster object (bitmap image).
+#' @returns A raster object (bitmap image) obtained from the Pokemon official website.
 #' @examples
 #' pokemon_photo("Pikachu")
 #' pokemon_photo("Mega Absol")

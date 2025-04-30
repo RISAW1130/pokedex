@@ -2,15 +2,15 @@
 % Please edit documentation in R/pokemon_photo.R
 \name{pokemon_photo}
 \alias{pokemon_photo}
-\title{Plot specified Pokemon's PNG image}
+\title{Plot specific Pokemon's official PNG image}
 \usage{
 pokemon_photo(name)
 }
 \arguments{
-\item{name}{A character object that is the name of the Pokemon}
+\item{name}{A character object that is the name of a Pokemon}
 }
 \value{
-A raster object (bitmap image).
+A raster object (bitmap image) obtained from the Pokemon official website.
 }
 \description{
 \code{pokemon_photo()} displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
