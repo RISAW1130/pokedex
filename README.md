@@ -12,7 +12,7 @@ also display the official image of a Pokemon you would like to look up.
 
 ## Installation
 
-You can install the development version of pokedex from
+You can install the development version of the `pokedex` package from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -21,6 +21,10 @@ devtools::install_github("RISAW1130/pokedex")
 ```
 
 ## Usage
+
+Given a specific Type name as an input, the `pokemon_search()` function
+returns a list object containing names of Pokemon that has the specified
+Type as its Type 1 variable.
 
 ``` r
 library(pokedex)
