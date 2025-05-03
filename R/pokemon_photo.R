@@ -4,7 +4,7 @@
 #' @param name A character object that is the name of a Pokemon
 #' @importFrom stringr str_sub
 #' @importFrom png readPNG
-#' @importFrom graphics plot.new
+#' @importFrom grid grid.newpage
 #' @importFrom grid grid.raster
 #' @returns A raster object (bitmap image) obtained from the Pokemon official website.
 #' @examples
@@ -53,6 +53,6 @@ pokemon_photo <- function(name) {
 
   image <- png::readPNG(RCurl::getURLContent(url))
 
-  graphics::plot.new()
+  grid::grid.newpage()
   grid::grid.raster(image)
 }
