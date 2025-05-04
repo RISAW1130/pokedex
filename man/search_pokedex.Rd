@@ -15,3 +15,7 @@ A list of character vectors containing the names of Pokémon whose \code{Type1} 
 \description{
 The \code{search_pokedex()} function allows users to search for Pokémon based on their primary type (\code{Type1}), using a case-insensitive match. It returns a list of Pokémon names that match the specified type.
 }
+\examples{
+search_pokedex("Fire")
+search_pokedex("WaTer")
+}

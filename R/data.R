@@ -1,9 +1,9 @@
-#' @title Metdata for Pokedex
+#' @title Pokemon metadata for `pokedex` functions
 #'
 #' @format
 #' \describe{
 #'   \item{No}{Pokedex number}
-#'   \item{Branch_Code}{Comic number}
+#'   \item{Branch_Code}{Unique combination of each Pokemon's Pokedex number and variation in forms. Original form is represented with a `0` after its Pokedex number, and any other additional form is represented with numbers following `0` (e.g. `1` or `2`).}
 #'   \item{Original_Name}{Name for each Pokemon. Not differenciating unique names for pokemon with multiple appearances, region forms, or mega evolutions.}
 #'   \item{Name}{Name for each Pokemon. Differentiating unique names for pokemon with multiple appearances, region forms, or mega evolutions.}
 #'   \item{Generation}{The number of generation each Pokemon. Mega evolved Pokemon's generation number is equivalent to origin(before evolution) Pokemon.}
@@ -41,5 +41,5 @@
 #'   \item{E_SP_Defense}{The amount of Effort Special Defense Value the Pokemon will drop when it is defeated in battle.}
 #'   \item{E_Speed}{The amount of Effort Speed Value the Pokemon will drop when it is defeated in battle.}
 #' }
-#' @source <https://pokedex.com/json.html>
+#' @source Takamasa Kato, <https://www.kaggle.com/datasets/takamasakato/pokemon-all-status-data/data>
 "pokedex_data"
