@@ -4,6 +4,7 @@
 #' @param name A character object that is the name of a Pokemon
 #' @importFrom stringr str_sub
 #' @importFrom png readPNG
+#' @importFrom RCurl getURLContent
 #' @importFrom grid grid.newpage
 #' @importFrom grid grid.raster
 #' @returns A raster object (bitmap image) obtained from the Pokemon official website.
