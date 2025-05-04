@@ -1,5 +1,3 @@
-library(vdiffr)
-
 test_that("search_pokedex function returns objects with the expected size and type", {
   fire_type <- search_pokedex("Fire")
   expect_true(is.list(fire_type))
