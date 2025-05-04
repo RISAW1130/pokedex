@@ -2,6 +2,7 @@
 
 export(pokemon_photo)
 export(search_pokedex)
+importFrom(RCurl,getURLContent)
 importFrom(grid,grid.newpage)
 importFrom(grid,grid.raster)
 importFrom(png,readPNG)
