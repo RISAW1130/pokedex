@@ -3,11 +3,11 @@
 \docType{data}
 \name{pokedex_data}
 \alias{pokedex_data}
-\title{Metdata for Pokedex}
+\title{Pokemon metadata for \code{pokedex} functions}
 \format{
 \describe{
 \item{No}{Pokedex number}
-\item{Branch_Code}{Comic number}
+\item{Branch_Code}{Unique combination of each Pokemon's Pokedex number and variation in forms. Original form is represented with a \code{0} after its Pokedex number, and any other additional form is represented with numbers following \code{0} (e.g. \code{1} or \code{2}).}
 \item{Original_Name}{Name for each Pokemon. Not differenciating unique names for pokemon with multiple appearances, region forms, or mega evolutions.}
 \item{Name}{Name for each Pokemon. Differentiating unique names for pokemon with multiple appearances, region forms, or mega evolutions.}
 \item{Generation}{The number of generation each Pokemon. Mega evolved Pokemon's generation number is equivalent to origin(before evolution) Pokemon.}
@@ -47,12 +47,12 @@
 }
 }
 \source{
-\url{https://pokedex.com/json.html}
+Takamasa Kato, \url{https://www.kaggle.com/datasets/takamasakato/pokemon-all-status-data/data}
 }
 \usage{
 pokedex_data
 }
 \description{
-Metdata for Pokedex
+Pokemon metadata for \code{pokedex} functions
 }
 \keyword{datasets}
