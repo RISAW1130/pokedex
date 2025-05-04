@@ -1,5 +1,5 @@
 Package: pokedex
-Title: A R package that will allow users to search Pokemon and visualise them in the RStudio plot window.
+Title: A R package that will allow users to search Pokemon and visualise them in the RStudio plot window
 Version: 0.0.0.9000
 Authors@R: 
     person("Risa", "Watanabe", , "rwatanabe@smith.edu", role = c("aut", "cre"))
