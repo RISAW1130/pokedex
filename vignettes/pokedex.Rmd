@@ -31,7 +31,6 @@ fire_pokemon <- search_pokedex(type1 = "Fire")
 print(fire_pokemon)
 ```
 
-
 ## Plotting Pokemon Picture (PNG)
 
 The `pokemon_photo` function displays the actual and specified Pokemon image in the plot window:
