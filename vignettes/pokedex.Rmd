@@ -14,10 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(pokedex)
-```
-
 ## Browsing Pokedex Function
 
 The main function of the pokedex package is to let you browse pokedex from within R. Let's see how we can accomplish this. First, load the `pokedex` package.
