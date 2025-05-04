@@ -6,9 +6,12 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The `pokedex` package provides an R interface to search through the
-\[pokedex_data\] for names of Pokemon that have a specific Type. You can
-also display the official image of a Pokemon you would like to look up.
+The `pokedex` package provides an R interface for the user to search
+through the pokedex for names of Pokemon that have a specific Type. You
+can also display the official image of a Pokemon you would like to look
+up. The Pokemon data that the `pokedex` package is referring includes
+all Pokemon that appeared up until the game Pokemon Scarlet and Pokemon
+Violet (ninth generation).
 
 ## Installation
 
