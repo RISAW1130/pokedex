@@ -6,7 +6,7 @@
 #' @returns A list of character vectors containing the names of Pokémon whose `Type1` matches the input type.
 #' @export
 search_pokedex <- function(type1) {
-  matching_pokemon <- pokedex_data[tolower(pokedex_data$Type1) == tolower(type1), ]
+  matching_pokemon <- pokedex::pokedex_data[tolower(pokedex::pokedex_data$Type1) == tolower(type1), ]
   return(as.list(matching_pokemon$Name))
 }
 #' @examples

@@ -19,11 +19,11 @@ pokemon_photo <- function(name) {
     stop("Your input must be a character vector. Try again.")
   }
 
-  for (i in 1:nrow(pokedex_data)) {
-    if (tolower(pokedex_data$Name[i]) == tolower(name)) {
-      if (stringr::str_sub(pokedex_data$Branch_Code[i], start = -2) == "_0"){
+  for (i in 1:nrow(pokedex::pokedex_data)) {
+    if (tolower(pokedex::pokedex_data$Name[i]) == tolower(name)) {
+      if (stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -2) == "_0"){
 
-        num <- as.character(pokedex_data$No[i])
+        num <- as.character(pokedex::pokedex_data$No[i])
 
         if (nchar(num) == 1) {
           num <- paste0("00", num)
@@ -32,14 +32,14 @@ pokemon_photo <- function(name) {
           num <- paste0("0", num)
         }
       } else {
-        variation <- as.numeric(stringr::str_sub(pokedex_data$Branch_Code[i], start = -1))
+        variation <- as.numeric(stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -1))
 
-        num <- paste0(pokedex_data$No[i], "_f", variation + 1)
+        num <- paste0(pokedex::pokedex_data$No[i], "_f", variation + 1)
 
-        if (nchar(pokedex_data$No[i]) == 1) {
+        if (nchar(pokedex::pokedex_data$No[i]) == 1) {
           num <- paste0("00", num)
         }
-        if (nchar(pokedex_data$No[i]) == 2) {
+        if (nchar(pokedex::pokedex_data$No[i]) == 2) {
           num <- paste0("0", num)
         }
       }
