@@ -2,7 +2,7 @@
 
 export(pokemon_photo)
 export(search_pokedex)
-importFrom(graphics,plot.new)
+importFrom(grid,grid.newpage)
 importFrom(grid,grid.raster)
 importFrom(png,readPNG)
 importFrom(stringr,str_sub)
