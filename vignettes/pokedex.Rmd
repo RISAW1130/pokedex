@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ## Browsing Pokedex Function
 
-The main function of the pokedex package is to let you browse pokedex from within R. Let's see how we can accomplish this. First, load the `pokedex` package.
+The main function of the `pokedex` package is to let you browse pokedex from within R. Let's see how we can accomplish this. First, load the `pokedex` package.
 
 ```{r setup}
 library(pokedex)
@@ -36,11 +36,11 @@ print(fire_pokemon)
 The `pokemon_photo` function displays the actual and specified Pokemon image in the plot window:
 
 ```{r}
-pokemon_photo("Pikachu")
+pokemon_photo("Charmander")
 ```
 
 ## Pokemon Data 
-The pokedex package also comes with a built-in dataset containing information on 1,010 Pokémon, including those from the 1st through 9th generations.
+The `pokedex` package also comes with a built-in data set containing information on 1,010 Pokémon, including those from the 1st through 9th generations.
 ```{r}
 pokedex::pokedex_data
 ```
