@@ -7,8 +7,7 @@ test_that("search_pokedex function returns objects with the expected size and ty
 })
 
 test_that("plotting Pokemon PNG image works", {
-  vdiffr::expect_doppelganger(
-    title = "pikachu png image",
-    fig = plot(pokemon_photo("Pikachu"))
-  )
+  vdiffr::expect_doppelganger("pikachu png image", fig = {
+    pokemon_photo("Pikachu")
+  })
 })
