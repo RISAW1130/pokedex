@@ -9,7 +9,6 @@ search_pokedex <- function(type1) {
   matching_pokemon <- pokedex_data[tolower(pokedex_data$Type1) == tolower(type1), ]
   return(as.list(matching_pokemon$Name))
 }
-
 #' @examples
 #' # Return a list of Fire-type Pokémon
 #' search_pokedex("Fire")
