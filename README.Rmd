@@ -31,10 +31,12 @@ devtools::install_github("RISAW1130/pokedex")
 
 ## Usage
 
-Given a specific Type name as an input, the `pokemon_search()` function returns a list object containing names of Pokemon that has the specified Type as its Type 1 variable.
+Given a specific Type name as an input, the `search_pokedex()` function returns a list object containing names of Pokemon that has the specified Type as its Type 1 variable.
 
 ```{r example}
 library(pokedex)
+
+search_pokedex("electric")
 ```
 
 Given a specific name of a Pokemon, the `pokemon_photo()` function displays the corresponding official PNG image of the specified Pokemon in the R plot window:
