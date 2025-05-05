@@ -21,8 +21,7 @@ pokemon_photo <- function(name) {
 
   for (i in 1:nrow(pokedex::pokedex_data)) {
     if (tolower(pokedex::pokedex_data$Name[i]) == tolower(name)) {
-      if (stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -2) == "_0"){
-
+      if (stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -2) == "_0") {
         num <- as.character(pokedex::pokedex_data$No[i])
 
         if (nchar(num) == 1) {

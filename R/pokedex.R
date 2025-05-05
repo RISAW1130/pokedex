@@ -11,8 +11,9 @@ search_pokedex <- function(type1) {
   matching_pokemon <- pokedex::pokedex_data[tolower(pokedex::pokedex_data$Type1) == tolower(type1), ]
   if (nrow(matching_pokemon) > 0) {
     return(as.list(matching_pokemon$Name))
-  } else (
-    stop("There are no Pokemon that has the provided Type as their Type 1. Please try again.")
-  )
+  } else {
+    (
+      stop("There are no Pokemon that has the provided Type as their Type 1. Please try again.")
+    )
+  }
 }
-
