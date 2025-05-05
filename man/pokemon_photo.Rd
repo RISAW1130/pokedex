@@ -10,10 +10,12 @@ pokemon_photo(name)
 \item{name}{A character object that is the name of a Pokemon}
 }
 \value{
-A raster object (bitmap image) obtained from the Pokemon official website.
+A raster object (bitmap image) obtained
+from the Pokemon official website.
 }
 \description{
-\code{pokemon_photo()} displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
+\code{pokemon_photo()} displays a PNG image of a specified Pokemon as a plot
+in a graphics device (e.g., the RStudio plot window).
 }
 \examples{
 pokemon_photo("Pikachu")

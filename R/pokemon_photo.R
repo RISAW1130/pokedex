@@ -1,13 +1,15 @@
 #' @title Plot specific Pokemon's official PNG image
 #' @description
-#' `pokemon_photo()` displays a PNG image of a specified Pokemon as a plot in a graphics device (e.g., the RStudio plot window).
+#' `pokemon_photo()` displays a PNG image of a specified Pokemon as a plot
+#' in a graphics device (e.g., the RStudio plot window).
 #' @param name A character object that is the name of a Pokemon
 #' @importFrom stringr str_sub
 #' @importFrom png readPNG
 #' @importFrom RCurl getURLContent
 #' @importFrom grid grid.newpage
 #' @importFrom grid grid.raster
-#' @returns A raster object (bitmap image) obtained from the Pokemon official website.
+#' @returns A raster object (bitmap image) obtained
+#' from the Pokemon official website.
 #' @examples
 #' pokemon_photo("Pikachu")
 #' pokemon_photo("Mega Absol")
@@ -19,9 +21,12 @@ pokemon_photo <- function(name) {
     stop("Your input must be a character vector. Try again.")
   }
 
-  for (i in 1:nrow(pokedex::pokedex_data)) {
+  for (i in seq_len(nrow(pokedex::pokedex_data))) {
     if (tolower(pokedex::pokedex_data$Name[i]) == tolower(name)) {
-      if (stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -2) == "_0") {
+      if (stringr::str_sub(
+        pokedex::pokedex_data$Branch_Code[i],
+        start = -2
+      ) == "_0") {
         num <- as.character(pokedex::pokedex_data$No[i])
 
         if (nchar(num) == 1) {
@@ -31,7 +36,9 @@ pokemon_photo <- function(name) {
           num <- paste0("0", num)
         }
       } else {
-        variation <- as.numeric(stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -1))
+        variation <- as.numeric(
+          stringr::str_sub(pokedex::pokedex_data$Branch_Code[i], start = -1)
+        )
 
         num <- paste0(pokedex::pokedex_data$No[i], "_f", variation + 1)
 
