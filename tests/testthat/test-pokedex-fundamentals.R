@@ -4,6 +4,13 @@ test_that("search_pokedex function returns objects with the expected size and ty
   expect_true(length(fire_type) > 1)
 })
 
+test_that("search_pokedex function will give an error when no Pokemon qualified for the search requirement", {
+  expect_error(
+    search_pokedex("NoMatch"),
+    "There are no Pokemon that has the provided Type as their Type 1. Please try again."
+  )
+})
+
 test_that("plotting Pokemon PNG image works", {
   vdiffr::expect_doppelganger("pikachu png image", fig = {
     pokemon_photo("Pikachu")
