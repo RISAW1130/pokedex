@@ -6,8 +6,6 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/RISAW1130/pokedex/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RISAW1130/pokedex/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/RISAW1130/pokedex/graph/badge.svg)](https://app.codecov.io/gh/RISAW1130/pokedex)
 <!-- badges: end -->
 
 The `pokedex` package provides an R interface for the user to search
