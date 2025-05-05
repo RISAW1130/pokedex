@@ -7,13 +7,18 @@
 search_pokedex(type1)
 }
 \arguments{
-\item{type1}{A character string specifying the primary Pokémon type to search for (e.g., "Fire", "Water", "Electric").}
+\item{type1}{A character string specifying the primary Pokémon type
+to search for (e.g., "Fire", "Water", "Electric").}
 }
 \value{
-A list of character vectors containing the names of Pokémon whose \code{Type1} matches the input type. If there are no Pokemon that qualifies for the search, the function will give an error message.
+A list of character vectors containing the names of Pokémon
+whose \code{Type1} matches the input type. If there are no Pokemon that
+qualifies for the search, the function will give an error message.
 }
 \description{
-The \code{search_pokedex()} function allows users to search for Pokémon based on their primary type (\code{Type1}), using a case-insensitive match. It returns a list of Pokémon names that match the specified type.
+The \code{search_pokedex()} function allows users to search for Pokémon
+based on their primary type (\code{Type1}), using a case-insensitive match.
+It returns a list of Pokémon names that match the specified type.
 }
 \examples{
 search_pokedex("Fire")
